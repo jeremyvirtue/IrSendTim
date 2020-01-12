@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"irtest\startup_stm32f103xb.o"
+"irtest\main.o"
+"irtest\gpio.o"
+"irtest\tim.o"
+"irtest\stm32f1xx_it.o"
+"irtest\stm32f1xx_hal_msp.o"
+"irtest\irsend.o"
+"irtest\stm32f1xx_hal_gpio_ex.o"
+"irtest\stm32f1xx_hal_tim.o"
+"irtest\stm32f1xx_hal_tim_ex.o"
+"irtest\stm32f1xx_hal.o"
+"irtest\stm32f1xx_hal_rcc.o"
+"irtest\stm32f1xx_hal_rcc_ex.o"
+"irtest\stm32f1xx_hal_gpio.o"
+"irtest\stm32f1xx_hal_dma.o"
+"irtest\stm32f1xx_hal_cortex.o"
+"irtest\stm32f1xx_hal_pwr.o"
+"irtest\stm32f1xx_hal_flash.o"
+"irtest\stm32f1xx_hal_flash_ex.o"
+"irtest\stm32f1xx_hal_exti.o"
+"irtest\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "IrTest\IrTest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IrTest.map" -o IrTest\IrTest.axf
